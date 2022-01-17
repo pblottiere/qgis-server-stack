@@ -1,0 +1,36 @@
+services:
+  demo:
+  tms:
+    use_grid_names: true
+    # origin for /tiles service
+    origin: 'nw'
+  kml:
+      use_grid_names: true
+  wmts:
+  wms:
+    versions: ['1.3.0']
+    md:
+      title: MapProxy WMS Proxy
+      abstract: This is a minimal MapProxy example.
+
+layers:
+  - name: countries
+    title: countries
+    sources: [countries_cache]
+
+caches:
+  countries_cache:
+    grids: [webmercator]
+    sources: [countries_wms]
+
+sources:
+  countries_wms:
+    type: wms
+    req:
+      url: http://nginx:4000/qgisserver?
+      layers: countries
+      transparent: true
+
+grids:
+    webmercator:
+        base: GLOBAL_WEBMERCATOR
