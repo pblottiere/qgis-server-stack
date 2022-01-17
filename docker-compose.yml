@@ -11,7 +11,7 @@ services:
   qgisserver:
     image: openquake/qgis-server:3.16
     volumes:
-      - ./QGIS-Training-Data/exercise_data/:/io/data
+      - ./:/io/data
     ports:
       - "8010:80"
     environment:

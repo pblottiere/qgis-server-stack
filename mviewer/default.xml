@@ -13,12 +13,10 @@
     </baselayers>
 
     <themes>
-        <theme name="Training Manual Data"  collapsed="true" id="high_tide" icon="fas fa-water">
-            <group name="Countries" id="high_countries">
-                <layer id="countries" name="countries" visible="false" queryable="false"
-                       style="" opacity="1" tiled="true" expanded="true"
-                       url="http://localhost:4001/service"/>
-            </group>
+        <theme name="Data"  collapsed="true" id="high_tide" icon="fas fa-water">
+            <layer id="countries" name="countries" visible="false" queryable="false"
+                   style="" opacity="1" tiled="true" expanded="true"
+                   url="http://localhost:4001/service"/>
         </theme>
     </themes>
 </config>
