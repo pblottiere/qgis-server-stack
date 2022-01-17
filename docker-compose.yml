@@ -12,8 +12,6 @@ services:
     image: openquake/qgis-server:3.16
     volumes:
       - ./:/io/data
-    ports:
-      - "8010:80"
     environment:
       - QGIS_SERVER_LOG_LEVEL=0
       - QGIS_USER=1000
