@@ -1,4 +1,3 @@
-version: '2'
 services:
   nginx:
     image: nginx:latest
@@ -9,7 +8,7 @@ services:
     ports:
       - "4000:4000"
   qgisserver:
-    image: openquake/qgis-server:3.16
+    image: qgis/qgis-server:latest
     volumes:
       - ./:/io/data
     environment:
@@ -26,4 +25,4 @@ services:
     volumes:
       - ./mviewer:/usr/share/nginx/html/apps
     ports:
-      - "8080:80"
+      - "8080:8080"
