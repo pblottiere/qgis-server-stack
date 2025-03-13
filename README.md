@@ -11,7 +11,7 @@ Deployment examples:
 
 ## docker-compose
 
-![alt text](mviewer.png "mviewer")
+![alt text](docs/mviewer.png "mviewer")
 
 QGIS Server stack example:
   - cache: [MapProxy](https://mapproxy.org/)
